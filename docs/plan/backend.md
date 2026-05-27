@@ -1,5 +1,9 @@
 # Plan de Implementación Backend
 
+## Estado
+- Iniciado el 2026-05-27.
+- Seguimiento en `docs/plan/bitacora-backend.md`.
+
 ## Objetivo
 Construir una API pequeña con FastAPI para:
 - gestionar tareas
