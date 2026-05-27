@@ -15,6 +15,7 @@ En progreso.
   - `GET /api/v1/tareas`
   - `POST /api/v1/chat`
 - Se integro servicio OpenAI para responder consultas del chat.
+- Se corrigio la carga de variables desde `.env` usando `python-dotenv`.
 
 ### Pendientes inmediatos
 - Agregar manejo de errores mas detallado por tipo.
@@ -25,3 +26,8 @@ En progreso.
 ### Riesgos
 - Sin `OPENAI_API_KEY` el endpoint de chat devolvera error.
 - Falta cubrir tests de regresion.
+
+### Incidencias resueltas
+- Error reportado: `Falta OPENAI_API_KEY` aun con `.env` presente.
+- Causa: el backend no cargaba el archivo `.env`.
+- Solucion: carga automatica de `.env` desde rutas esperadas en `app/config.py`.
