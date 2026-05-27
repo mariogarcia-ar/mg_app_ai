@@ -1,0 +1,71 @@
+@baseUrl = http://127.0.0.1:8000
+@api = {{baseUrl}}/api/v1
+
+### Healthcheck
+GET {{api}}/health
+Accept: application/json
+
+### Crear tarea 1
+POST {{api}}/tareas
+Content-Type: application/json
+Accept: application/json
+
+{
+  "texto": "Preparar presentacion"
+}
+
+### Crear tarea 2
+POST {{api}}/tareas
+Content-Type: application/json
+Accept: application/json
+
+{
+  "texto": "Estudiar para el examen"
+}
+
+### Crear tarea 3
+POST {{api}}/tareas
+Content-Type: application/json
+Accept: application/json
+
+{
+  "texto": "Responder mails"
+}
+
+### Listar tareas
+GET {{api}}/tareas
+Accept: application/json
+
+### Consultar chat IA
+POST {{api}}/chat
+Content-Type: application/json
+Accept: application/json
+
+{
+  "pregunta": "Que deberia hacer primero y por que?",
+  "tareas": [
+    "Preparar presentacion",
+    "Estudiar para el examen",
+    "Responder mails",
+    "Comprar materiales"
+  ]
+}
+
+### Caso invalido: tarea vacia (espera 422)
+POST {{api}}/tareas
+Content-Type: application/json
+Accept: application/json
+
+{
+  "texto": ""
+}
+
+### Caso invalido: chat sin tareas (espera 422 o 400)
+POST {{api}}/chat
+Content-Type: application/json
+Accept: application/json
+
+{
+  "pregunta": "Priorizame esto",
+  "tareas": []
+}
