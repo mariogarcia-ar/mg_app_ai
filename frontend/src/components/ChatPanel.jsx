@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function ChatPanel({ onAsk, loading, response }) {
   const [pregunta, setPregunta] = useState("");

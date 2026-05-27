@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function StatusBanner({ text, type = "info" }) {
   if (!text) {
     return null;

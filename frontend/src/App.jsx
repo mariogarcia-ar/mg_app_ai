@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import ChatPanel from "./components/ChatPanel";
 import StatusBanner from "./components/StatusBanner";
