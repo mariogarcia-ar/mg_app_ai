@@ -69,3 +69,4 @@ coverage/
 .parcel-cache
 .eslintcache
 backend/data/app.db
+.run/
