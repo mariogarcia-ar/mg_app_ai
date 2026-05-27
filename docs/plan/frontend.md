@@ -1,5 +1,9 @@
 # Plan de Implementación Frontend
 
+## Estado
+- Iniciado el 2026-05-27.
+- Seguimiento en `docs/plan/bitacora-frontend.md`.
+
 ## Objetivo
 Construir una interfaz React simple y clara para:
 - crear tareas
