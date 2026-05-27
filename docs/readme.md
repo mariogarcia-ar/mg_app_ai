@@ -24,9 +24,9 @@ Luego le pregunta al chat:
 
 ¿Qué debería hacer primero?
 
-La app envía esas tareas a la **API de ChatGPT**.
+La app envía esas tareas a la **API de OpenAI**.
 
-ChatGPT responde:
+OpenAI responde:
 
 Te recomiendo empezar por preparar la presentación, luego estudiar, después responder mails y finalmente comprar materiales.
 
@@ -55,7 +55,7 @@ En nuestra app:
 
 * recibe las tareas  
 * recibe la pregunta del usuario  
-* arma el pedido para ChatGPT  
+* arma el pedido para OpenAI  
 * devuelve la respuesta al frontend
 
 Frase simple:
@@ -68,7 +68,7 @@ Es la forma en que dos sistemas se comunican.
 
 En nuestra app:
 
-* nuestro backend habla con la API de ChatGPT  
+* nuestro backend habla con la API de OpenAI  
 * le manda tareas \+ pregunta  
 * recibe una respuesta
 
@@ -76,16 +76,16 @@ Frase simple:
 
 “Una API es como un mozo digital: lleva un pedido y trae una respuesta.”
 
-## **4\. ChatGPT API**
+## **4\. OpenAI API**
 
 Es el modelo de IA usado dentro de la aplicación.
 
-No entramos a ChatGPT manualmente.  
-La app usa ChatGPT por detrás.
+No entramos a OpenAI manualmente.  
+La app usa OpenAI por detrás.
 
 Frase clave:
 
-“La diferencia es que ahora ChatGPT no está en una pestaña aparte: vive dentro de nuestra aplicación.”
+“La diferencia es que ahora la IA no está en una pestaña aparte: vive dentro de nuestra aplicación.”
 
 # **Arquitectura Simple para Mostrar en Clase**
 
@@ -95,7 +95,7 @@ Frontend
   ↓  
 Backend  
   ↓  
-ChatGPT API  
+OpenAI API  
   ↓  
 Backend  
   ↓  
